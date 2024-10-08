@@ -184,15 +184,21 @@ img {
 }
 
 .grid-item {
-  margin: 100px 100px;
-  background-color: #f9f9f9;
-  padding: 20px;
+  margin: 50px 50px;
+  color: #f5f5f5;
+  padding: 100px 50px;
   border: 1px solid #ddd;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: right;
+}
+
+.Klassiske {
+  background-image: url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
 }
 
 button {
@@ -212,7 +218,7 @@ button:hover {
 /* footer */
 .footer-container {
   max-width: 1170px;
-  margin: auto;
+  margin-top: auto;
 }
 .footer-row {
   display: flex;
