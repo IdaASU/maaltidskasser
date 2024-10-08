@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/medlem.css" />
     <link rel="stylesheet" href="js/spinner.js" defer />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/medlem.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="logo">
-        <a href="index.html"><img src="img/logo.webp" /></a>
+        <a href="index.html"><img class="logo_img" src="img/logo.webp" /></a>
       </div>
       <!-- nav-bar -->
       <nav class="menu">
@@ -42,35 +44,48 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <img src="img/Meal Prep Bento Recipes Ideas_ 3 Dollar Bento Challenge.jpg" alt="bento">
-    </section>
+
     <section class="medlem">
-      <form>
+    <section>
+      <img class="mad" src="img/Meal Prep Bento Recipes Ideas_ 3 Dollar Bento Challenge.jpg" alt="bento">
+    </section>
+      
+    <form onsubmit="return showAlert()">
+        <section class="gratis">
+        <p>Opret dig helt gratis!</p>
+      </section>
+
           <section class="medlem-form">
 
-              <section class="your-name"><label>Navn</label></section>
-
+              <section class="your-name"><label>Navn</label>
               <input id="navn" type="text">
+            </section>
 
-              <section class="enter-email"><label>Mail</label></section>
-
+              <section class="enter-email"><label>Mail</label>
               <input id="email" type="text">
+            </section>
 
-          </section>
-
-          <section class="medlem-section">
-
-              <section class="din-ide"><label> Telefon</label></section>
-
+              <section class="din-ide"><label> Telefon</label>
               <input id="ide" type="text">
+            </section>
 
               <input id="submit-button" type="submit">
 
           </section>
       </form>
   </section>
-    
+
+  <div id="notifikation" class="popup" style="display:none;">
+    Du er blevet oprettet!
+    <div class="close_div">
+    <button class="close" onclick="closePopup()">Ok</button>
+  </div>
+</div>
+
+
+<div class="streg"></div>
+
+
     <!-- footer -->
     <footer class="footer">
         <section class="footer-container">
@@ -115,9 +130,9 @@
               <div class="social-links"></div>
               <h4>Find Os</h4>
   
-              <a href=""><img src="img/face-1.webp" /></a>
-              <a href=""><img src="img/ig-1.webp" /></a>
-              <a href=""><img src="img/x.webp" /></a>
+              <a href=""><img class="logo_img" src="img/face-1.webp" /></a>
+              <a href=""><img class="logo_img" src="img/ig-1.webp" /></a>
+              <a href=""><img class="logo_img" src="img/x.webp" /></a>
             </div>
           </div>
         </section>
