@@ -357,3 +357,14 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #067a46;
 }
+
+/*404*/
+img.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the whole screen without distorting */
+  z-index: -1; /* Places the image behind other content */
+}
