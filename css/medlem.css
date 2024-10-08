@@ -214,6 +214,36 @@
     margin: 10px auto; /* Afstand til indholdet */
   }
 
+  .star{
+    height: 40px;
+  }
+
+.anmeldelser{
+margin: 0 40px;
+}
+
+  .kunde1{
+    font-size: 1.2rem;
+    margin-top: 100px;
+    width: 35rem;
+    text-align: center;
+  }
+
+  .kunde2{
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-left: auto;
+    width: 35rem;
+    text-align: center;
+  }
+
+  .kunde3{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 35rem;
+    text-align: center;
+  }
 
   /* footer */
   .footer-container {
