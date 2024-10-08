@@ -170,12 +170,21 @@ img {
   border-radius: 5px;
 }
 
+body > main > section:nth-child(4) > video {
+  display: block;
+  margin: 0 auto;
+}
+body > main > section:nth-child(4) > h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
 /* Måltidskasser scrollbar__ FORSIDE */
 .center__h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .måltidskasser_container {
@@ -231,6 +240,13 @@ img {
 .Allergivenlig {
   background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
     url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+.Nippon-ingredienser {
+  background-image: linear-gradient(to left, #ffffff32, rgba(0, 0, 0, 0.66)),
+    url("https://images.unsplash.com/photo-1561043433-aaf687c4cf04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
 }
