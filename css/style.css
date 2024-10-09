@@ -205,8 +205,6 @@ body > main > section:nth-child(4) > h1 {
   align-items: flex-start;
 }
 
-
-
 .Nippon-ingredienser {
   background-image: linear-gradient(to left, #ffffff32, rgba(0, 0, 0, 0.66)),
     url("https://images.unsplash.com/photo-1561043433-aaf687c4cf04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -279,7 +277,6 @@ ul {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
   text-decoration: none;
   font-weight: 300;
   color: #000000;
@@ -287,24 +284,17 @@ ul {
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: #ffffff;
   padding-left: 8px;
 }
 .footer-col .social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: #f5f5f5;
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ffffff;
   transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
 }
 
 /*  */
@@ -336,4 +326,3 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #067a46;
 }
-

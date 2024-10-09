@@ -1,131 +1,129 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* logo */
-  
-  .logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .logo_img {
-    height: 50px;
-    padding-left: 15px;
-    padding-top: 5px;
-  }
-  
-  /* Nav-bar  */
-  
-  .menu {
-    background: #067a46;
-    height: 50px;
-    width: 100%;
-    padding-right: 18px;
-    border-radius: 0px;
-  }
-  .menu li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-  }
-  .menu ul {
-    width: 100%;
-    text-align: right;
-  }
-  
-  .menu a {
-    display: block;
-    line-height: 50px;
-    padding: 0 14px;
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 16px;
-  }
-  
-  .menu li a:hover {
-    color: #f5f5f5;
-    background: #059655;
-  }
-  
-  .menu a.dropdown-arrow:after {
-    content: "\23F7";
-    margin-left: 5px;
-  }
-  
-  .menu ul.sub-menus {
-    height: auto;
-    overflow: hidden;
-    width: 170px;
-    background: #067a46;
-    position: absolute;
-    z-index: 99;
-    display: none;
-  }
-  .menu ul.sub-menus li {
-    display: block;
-    text-align: left;
-    width: 100%;
-  }
-  .menu ul.sub-menus a {
-    color: #f5f5f5;
-    font-size: 16px;
-  }
-  .menu li:hover ul.sub-menus {
-    display: block;
-  }
-  .menu ul.sub-menus a:hover {
-    background: #059655;
-    color: #f5f5f5;
-  }
-  
-  /* Spinner */
-  .loading-state {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .loading {
-    display: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: radial-gradient(farthest-side, #067a46 94%, #0000) top/8px 8px no-repeat,
-      conic-gradient(#0000 30%, #067a46);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-    animation: s3 1s infinite linear;
-  }
-  
-  @keyframes s3 {
-    100% {
-      transform: rotate(1turn);
-    }
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+/* logo */
 
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #067a46;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo_img {
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+/* Nav-bar  */
+
+.menu {
+  background: #067a46;
+  height: 50px;
+  width: 100%;
+  padding-right: 18px;
+  border-radius: 0px;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.menu ul {
+  width: 100%;
+  text-align: right;
+}
+
+.menu a {
+  display: block;
+  line-height: 50px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+.menu li a:hover {
+  color: #f5f5f5;
+  background: #059655;
+}
+
+.menu a.dropdown-arrow:after {
+  content: "\23F7";
+  margin-left: 5px;
+}
+
+.menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 170px;
+  background: #067a46;
+  position: absolute;
+  z-index: 99;
+  display: none;
+}
+.menu ul.sub-menus li {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+.menu ul.sub-menus a {
+  color: #f5f5f5;
+  font-size: 16px;
+}
+.menu li:hover ul.sub-menus {
+  display: block;
+}
+.menu ul.sub-menus a:hover {
+  background: #059655;
+  color: #f5f5f5;
+}
+
+/* Spinner */
+.loading-state {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loading {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #067a46 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, #067a46);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
   }
-  
-  button:hover {
-    background-color: #059655;
-  }
-  
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #067a46;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #059655;
+}
 
 .medlem-form label {
   font-size: 18px;
@@ -154,197 +152,186 @@
   background-color: #059655;
 }
 
-.gratis{
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+.gratis {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.mad{
-    height: 25rem;
-    margin-right: 3rem;
+.mad {
+  height: 25rem;
+  margin-right: 3rem;
 }
 
-.medlem{
-    display: flex;
-    flex-direction: row;
-    margin: 8rem 0;
-    justify-content: center;
+.medlem {
+  display: flex;
+  flex-direction: row;
+  margin: 8rem 0;
+  justify-content: center;
 }
 
-.medlem-form section{
-    margin-bottom: 2rem;
+.medlem-form section {
+  margin-bottom: 2rem;
 }
 
 .popup {
-    font-size: 20px;
-    color: #f5f5f5;
-    position: fixed; /* Positioner popup'en fast på skærmen */
-    left: 50%; /* Centrer horisontalt */
-    top: 50%; /* Centrer vertikalt */
-    transform: translate(-50%, -50%); /* Juster til midten */
-    background-color: #067a46; /* Baggrundsfarve */
-    padding: 50px; /* Indvendig afstand */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skygge */
-    z-index: 1000; /* Sørg for, at den vises over andre elementer */
-    border-radius: 5px;
+  font-size: 20px;
+  color: #f5f5f5;
+  position: fixed; /* Positioner popup'en fast på skærmen */
+  left: 50%; /* Centrer horisontalt */
+  top: 50%; /* Centrer vertikalt */
+  transform: translate(-50%, -50%); /* Juster til midten */
+  background-color: #067a46; /* Baggrundsfarve */
+  padding: 50px; /* Indvendig afstand */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skygge */
+  z-index: 1000; /* Sørg for, at den vises over andre elementer */
+  border-radius: 5px;
 }
 
-  
-.close_div{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.close_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.close{
-    background-color: #f5f5f5;
-    color: #000;
-    font-weight: bold;
-    width: 6rem;
-    height: 2rem;
+.close {
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  width: 6rem;
+  height: 2rem;
 }
 
-.streg{
-    content: "";
-    display: block;
-    width: 80%; /* Gør stregen 100% bred */
-    height: 2px; /* Højde af stregen */
-    background-color: #a19b9b; /* Stregens farve */
-    margin: 10px auto; /* Afstand til indholdet */
-  }
-
-  .star{
-    height: 40px;
-  }
-
-.anmeldelser{
-margin: 0 40px;
+.streg {
+  content: "";
+  display: block;
+  width: 80%; /* Gør stregen 100% bred */
+  height: 2px; /* Højde af stregen */
+  background-color: #a19b9b; /* Stregens farve */
+  margin: 10px auto; /* Afstand til indholdet */
 }
 
-  .kunde1{
-    font-size: 1.2rem;
-    margin-top: 100px;
-    width: 35rem;
-    text-align: center;
-  }
+.star {
+  height: 40px;
+}
 
-  .kunde2{
-    font-size: 1.2rem;
-    margin-top: 50px;
-    margin-left: auto;
-    width: 35rem;
-    text-align: center;
-  }
+.anmeldelser {
+  margin: 0 40px;
+}
 
-  .kunde3{
-    font-size: 1.2rem;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 35rem;
-    text-align: center;
-  }
+.kunde1 {
+  font-size: 1.2rem;
+  margin-top: 100px;
+  width: 35rem;
+  text-align: center;
+}
 
-  /* footer */
-  .footer-container {
-    max-width: 1170px;
-    margin-top: auto;
-  }
-  .footer-row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul {
-    list-style: none;
-  }
-  .footer {
-    background-color: #f5f5f5;
-    padding: 70px 0;
-  }
-  .footer-col {
-    width: 25%;
-    padding: 0 15px;
-  }
-  .footer-col h4 {
-    font-size: 18px;
-    color: #000000;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-  }
-  .footer-col h4::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #000000;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-  .footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #000000;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  .footer-col ul li a:hover {
-    color: #ffffff;
-    padding-left: 8px;
-  }
-  .footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: #f5f5f5;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
-  }
-  
-  /*  */
-  /* TILMELD KNAP I FOOTER IKKE FÆRDIG */
-  .Tilmeld {
-    background-color: #067a46;
-    border: none;
-    color: #f5f5f5;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 20px;
-    margin: 10px 0px;
-    cursor: pointer;
-  }
-  
-  /* Side scroolbar */
-  
-  body::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #067a46;
-  }
+.kunde2 {
+  font-size: 1.2rem;
+  margin-top: 50px;
+  margin-left: auto;
+  width: 35rem;
+  text-align: center;
+}
 
-  
+.kunde3 {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 35rem;
+  text-align: center;
+}
+
+/* footer */
+.footer-container {
+  max-width: 1170px;
+  margin-top: auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #f5f5f5;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #000000;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000000;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+/*  */
+/* TILMELD KNAP I FOOTER IKKE FÆRDIG */
+.Tilmeld {
+  background-color: #067a46;
+  border: none;
+  color: #f5f5f5;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+/* Side scroolbar */
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #067a46;
+}
