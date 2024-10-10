@@ -1,4 +1,4 @@
-// Definer priser per person per dag
+// Priser per person per dag
 const prices = {
     1: 749,
     2: 1429,
@@ -7,39 +7,38 @@ const prices = {
 };
 
 // Variabler til at gemme valgte personer og dage
-let selectedPersons = 0;  // Start med 0 for at indikere, at intet er valgt endnu
-let selectedDays = 0;     // Start med 0 for at indikere, at intet er valgt endnu
+let selectedPersons = 0;
+let selectedDays = 0;
 
-// Funktion til at opdatere den samlede pris
+// Funktion til at opdatere den total pris(i alt)
 function updateTotal() {
-    // Tjek om både personer og dage er valgt
     if (selectedPersons > 0 && selectedDays > 0) {
-        const total = prices[selectedPersons] * selectedDays;
-        document.getElementById("iAlt").value = total;  // Vis den beregnede total
+      const total = prices[selectedPersons] * selectedDays;
+      document.getElementById("iAlt").value = total;
     } else {
-        document.getElementById("iAlt").value = '';  // Vis en tom værdi, hvis enten personer eller dage ikke er valgt
+      document.getElementById("iAlt").value = 0;
     }
-}
+  }
 
 // Funktion til at håndtere valg af personer og dage
 function increaseQuantity(type, value) {
     if (type === 'personer') {
-        selectedPersons = value; // Sæt det valgte antal personer
+        selectedPersons = value;
     } else if (type === 'dage') {
-        selectedDays = value; // Sæt det valgte antal dage
+        selectedDays = value;
     }
-    updateTotal(); // Opdater den samlede pris
+    updateTotal();
 }
 
 // Funktion til at nulstille valgene og den samlede pris
 function resetSelections() {
-    // Nulstil både selectedPersons og selectedDays til 0
+
     selectedPersons = 0;
     selectedDays = 0;
     
-    // Opdater den samlede pris (som nu bliver blank)
+
     updateTotal();
 }
 
-// Initial opdatering af prisen ved indlæsning af siden
+// Opdatering af prisen ved indlæsning af siden
 window.onload = updateTotal;
