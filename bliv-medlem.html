@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/medlem.css" />
-    <link rel="stylesheet" href="js/spinner.js" defer />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/spinner.js" defer></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <script src="js/medlem.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="logo">
-        <a href="index.html"><img class="logo_img" src="img/logo.webp" /></a>
+        <a href="index.html"><img class="logo_img" src="img/logo.webp" alt="nippon_logo" /></a>
       </div>
       <!-- nav-bar -->
       <nav class="menu">
@@ -46,135 +46,147 @@
     </header>
 
     <section class="medlem">
-    <section>
-      <img class="mad" src="img/Meal Prep Bento Recipes Ideas_ 3 Dollar Bento Challenge.jpg" alt="bento">
-    </section>
-      
-    <form onsubmit="return showAlert()">
-        <section class="gratis">
-        <p>Opret dig helt gratis!</p>
+      <section>
+        <img class="mad" src="img/Meal_Prep-Bento-Recipes-Ideas-3-Dollar-Bento-Challenge.webp" alt="bento" />
       </section>
 
-          <section class="medlem-form">
+      <form onsubmit="return showAlert()">
+        <section class="gratis">
+          <p>Opret dig helt gratis!</p>
+        </section>
 
-              <section class="your-name"><label>Navn</label>
-              <input id="navn" type="text">
-            </section>
-
-              <section class="enter-email"><label>Mail</label>
-              <input id="email" type="text">
-            </section>
-
-              <section class="din-ide"><label> Telefon</label>
-              <input id="ide" type="text">
-            </section>
-
-              <input id="submit-button" type="submit">
-
+        <section class="medlem-form">
+          <section class="your-name">
+            <label>Navn</label>
+            <input id="navn" type="text" />
           </section>
+
+          <section class="enter-email">
+            <label>Mail</label>
+            <input id="email" type="text" />
+          </section>
+
+          <section class="din-ide">
+            <label> Telefon</label>
+            <input id="ide" type="text" />
+          </section>
+
+          <input id="submit-button" type="submit" />
+        </section>
       </form>
-  </section>
+    </section>
 
-  <div id="notifikation" class="popup" style="display:none;">
-    Du er blevet oprettet!
-    <div class="close_div">
-    <button class="close" onclick="closePopup()">Ok</button>
-  </div>
-</div>
-
-
-<div class="streg"></div>
-
-<section class="anmeldelser">
-  
-<div class="kunde1">
-<div class=stars>
-  <img class="star" src="img/star.png" alt="star">
-  <img class="star" src="img/star.png" alt="star">
-  <img class="star" src="img/star.png" alt="star">
-  <img class="star" src="img/star.png" alt="star">
-  <img class="star" src="img/star.png" alt="star">
-</div>
-
-<div><p>"Jeg elsker, at jeg kan tilpasse måltidskassen til mine præferencer. Det føles som en skræddersyet løsning til min diæt, og jeg spilder aldrig mad!" - Johanne</p></div>
-</div>
-
-<div class="kunde2">
-  <div class=stars>
-    <img class="star" src="img/star.png" alt="star">
-    <img class="star" src="img/star.png" alt="star">
-    <img class="star" src="img/star.png" alt="star">
-    <img class="star" src="img/star.png" alt="star">
-  </div>
-
-  <div class="anmeldelse"><p>"Måltidskasserne har virkelig gjort vores hverdag lettere! Det er som at få en hjælpende hånd i køkkenet hver dag! - Karl</p></div>
-  </div>
-
-  <div class="kunde3">
-    <div class=stars>
-      <img class="star" src="img/star.png" alt="star">
-      <img class="star" src="img/star.png" alt="star">
-      <img class="star" src="img/star.png" alt="star">
-      <img class="star" src="img/star.png" alt="star">
-      <img class="star" src="img/star.png" alt="star">
+    <div id="notifikation" class="popup" style="display: none">
+      Du er blevet oprettet!
+      <div class="close_div">
+        <button class="close" onclick="closePopup()">Ok</button>
+      </div>
     </div>
 
-    <div class="anmeldelse"><p>"Fantastisk udvalg af lækre måltider! Det er så dejligt at få variation i hverdagen, og jeg ser altid frem til at åbne min kasse." - Anthon</p></div>
-    </div>
+    <div class="streg"></div>
 
-</section>
+    <section class="anmeldelser">
+      <div class="kunde1">
+        <div class="stars">
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+        </div>
 
+        <div>
+          <p>
+            "Jeg elsker, at jeg kan tilpasse måltidskassen til mine præferencer. Det føles som en skræddersyet løsning
+            til min diæt, og jeg spilder aldrig mad!" - Johanne
+          </p>
+        </div>
+      </div>
+
+      <div class="kunde2">
+        <div class="stars">
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+        </div>
+
+        <div class="anmeldelse">
+          <p>
+            "Måltidskasserne har virkelig gjort vores hverdag lettere! Det er som at få en hjælpende hånd i køkkenet
+            hver dag! - Karl
+          </p>
+        </div>
+      </div>
+
+      <div class="kunde3">
+        <div class="stars">
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+          <img class="star" src="img/star.png" alt="star" />
+        </div>
+
+        <div class="anmeldelse">
+          <p>
+            "Fantastisk udvalg af lækre måltider! Det er så dejligt at få variation i hverdagen, og jeg ser altid frem
+            til at åbne min kasse." - Anthon
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="footer">
-        <section class="footer-container">
-          <div class="footer-row">
-            <div class="footer-col">
-              <h4>Kontakt</h4>
-              <ul>
-                <li><a href="#">addrese</a></li>
-                <li><a href="mailto:nippon@example.com">nippon@example.com</a></li>
-                <li><a href="tel:+14155550132">tel:+14155550132</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Om os</h4>
-              <ul>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Handelsbetingelser</a></li>
-                <li><a href="#">Privatlivspolitik</a></li>
-                <li><a href="#">leverandører</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Hjælpecenter</h4>
-              <ul>
-                <li><a href="#">levering</a></li>
-                <li><a href="#">refund</a></li>
-                <li><a href="#">abonnement</a></li>
-                <li><a href="#">Gavekort</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Nyhedsbrev</h4>
-              <p>
-                Tilmeld dig vores nyhedsbrev og få ugentlige opskrifter, tips til nemme hverdagsretter og eksklusive
-                tilbud.
-              </p>
-              <span>Email</span>
-              <label for="email"><input type="email" id="email" pattern=".+@example\.com" size="30" required /></label>
-  
-              <button class="Tilmeld">Tilmeld</button>
-              <!-- socials -->
-              <div class="social-links"></div>
-              <h4>Find Os</h4>
-  
-              <a href=""><img class="logo_img" src="img/face-1.webp" /></a>
-              <a href=""><img class="logo_img" src="img/ig-1.webp" /></a>
-              <a href=""><img class="logo_img" src="img/x.webp" /></a>
-            </div>
+      <section class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Kontakt</h4>
+            <ul>
+              <li><a href="#">addrese</a></li>
+              <li><a href="mailto:nippon@example.com">nippon@example.com</a></li>
+              <li><a href="tel:+14155550132">tel:+14155550132</a></li>
+            </ul>
           </div>
-        </section>
-      </footer>
-    </body>
-  </html>
+          <div class="footer-col">
+            <h4>Om os</h4>
+            <ul>
+              <li><a href="#">Produkter</a></li>
+              <li><a href="#">Handelsbetingelser</a></li>
+              <li><a href="#">Privatlivspolitik</a></li>
+              <li><a href="#">leverandører</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Hjælpecenter</h4>
+            <ul>
+              <li><a href="#">levering</a></li>
+              <li><a href="#">refund</a></li>
+              <li><a href="#">abonnement</a></li>
+              <li><a href="#">Gavekort</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nyhedsbrev</h4>
+            <p>
+              Tilmeld dig vores nyhedsbrev og få ugentlige opskrifter, tips til nemme hverdagsretter og eksklusive
+              tilbud.
+            </p>
+            <span>Email</span>
+            <label for="email2"><input id="email2" pattern=".+@example\.com" size="30" required /></label>
+
+            <button class="Tilmeld">Tilmeld</button>
+            <!-- socials -->
+            <div class="social-links"></div>
+            <h4>Find Os</h4>
+
+            <a href=""><img class="logo_img" src="img/face-1.webp" alt="facebook_logo" /></a>
+            <a href=""><img class="logo_img" src="img/ig-1.webp" alt="instagram_logo" /></a>
+            <a href=""><img class="logo_img" src="img/x.webp" alt="X_logo" /></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
