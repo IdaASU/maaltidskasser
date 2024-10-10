@@ -207,38 +207,32 @@ body > main > section:nth-child(4) > h1 {
 /* Billeder og gradient til kasser */
 
 .Klassiske {
-  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
-    url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)), url(../img/klassiske.webp);
   background-size: cover;
   background-position: center;
 }
 .Hurtige {
-  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
-    url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)), url(../img/hurtige.webp);
   background-size: cover;
   background-position: center;
 }
 .vegetariske {
-  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
-    url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)), url(../img/vegetariske.webp);
   background-size: cover;
   background-position: center;
 }
 .Sunde {
-  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
-    url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)), url(../img/sunde.webp);
   background-size: cover;
   background-position: center;
 }
 .Søde {
-  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
-    url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)), url(../img/den-søde.webp);
   background-size: cover;
   background-position: center;
 }
 .Allergivenlig {
-  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)),
-    url("https://plus.unsplash.com/premium_photo-1670601440146-3b33dfcd7e17?q=80&w=1876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: linear-gradient(to top, #ffffff32, rgba(0, 0, 0, 0.66)), url(../img/Allergivenlig.webp);
   background-size: cover;
   background-position: center;
 }
