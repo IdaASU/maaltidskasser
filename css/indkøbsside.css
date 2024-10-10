@@ -197,12 +197,6 @@ margin-right: 10px;
   background-color: #059655;
 }
 
-/* Stil til valgte knapper */
-.selected {
-  background-color: #059655;
-  color: white; /* Gør tekstfarven hvid, når knappen er valgt */
-}
-
 /* IMAGE IKONER */
 
 .kat__img {
@@ -217,6 +211,7 @@ margin-right: 10px;
   left: 0px;
   bottom: 0;
 }
+
 
 /* footer */
 .footer-container {
