@@ -117,6 +117,7 @@
   display: flex;
   justify-content: center;
   margin: 50px 100px;
+  position: relative;
 }
 
 .indkøbsside__box {
@@ -167,6 +168,21 @@ body > main > section > div > h4 {
 
 button:hover {
   background-color: #059655;
+}
+
+/* IMAGE IKONER */
+
+.kat__img {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  top: 210px;
+}
+
+.onigiri__img {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
 }
 
 /* footer */
