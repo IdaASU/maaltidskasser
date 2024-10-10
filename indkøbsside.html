@@ -78,11 +78,32 @@
           </aside>
         </div>
 
-        <button class="button" onclick="showAlert()">Bestil</button>
+        
+        <form onsubmit="return showAlert()">
+            <input class="button" type="submit" value="Bestil" />
+        </form>
 
-      </div>
-
+        <div id="notifikation" class="popup" style="display: none">
+          <p class="tekst">Din vare er nu lagt i kurven.</p>
+          <p class="tekst">Fortsæt til tilmeldning for at færdiggøre dit køb.</p>
+          <div class="close_div">
+            <a class="tilmeld" href="bliv-medlem.html">Tilmeld</a>
+            <button class="tilmeld" onclick="closePopup()">Ok</button>
+          </div>
+        </div>
+  
       </section>
+
+  
+    
+
+      <div id="notifikation" class="popup" style="display: none">
+        Du er blevet oprettet!
+        <div class="close_div">
+          <button class="close" onclick="closePopup()">Ok</button>
+        </div>
+      </div>
+  
 
         <!-- ikoner på indkøbsside -->
         <img class="kat__img" src="img/cat.webp" alt="kat" />
@@ -141,5 +162,7 @@
         </div>
       </section>
     </footer>
+
+    
   </body>
 </html>

@@ -190,6 +190,49 @@ margin-right: 10px;
   font-size: 16px;
 }
 
+.popup {
+  font-size: 20px;
+  color: #f5f5f5;
+  position: fixed; /* Positioner popup'en fast på skærmen */
+  left: 50%; /* Centrer horisontalt */
+  top: 50%; /* Centrer vertikalt */
+  transform: translate(-50%, -50%); /* Juster til midten */
+  background-color: #067a46; /* Baggrundsfarve */
+  padding: 50px; /* Indvendig afstand */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skygge */
+  z-index: 1000; /* Sørg for, at den vises over andre elementer */
+  border-radius: 5px;
+}
+
+.tilmeld{
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #b7b7b7;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.tekst{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+}
+
+.close_div{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .Antal_btn:hover,
 .Antal_btn:focus,
 .Antal_btn:active
