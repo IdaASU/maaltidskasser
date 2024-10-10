@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/indkoeb.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/indkoeb.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img class="logo_img" src="img/logo.webp" /></a>
+      </div>
+      <!-- nav-bar -->
+      <nav class="menu">
+        <ul>
+          <li>
+            <a class="dropdown-arrow" href="måltidskasser.html">Måltidskasser</a>
+            <ul class="sub-menus">
+              <li><a href="fire-nul-fire.html">Den Klassiske</a></li>
+              <li><a href="fire-nul-fire.html">Den Hurtige</a></li>
+              <li><a href="fire-nul-fire.html">Den vegetariske</a></li>
+              <li><a href="fire-nul-fire.html">Den Sunde</a></li>
+              <li><a href="fire-nul-fire.html">Den Søde</a></li>
+              <li><a href="fire-nul-fire.html">Den Allergivenlig</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-arrow" href="fire-nul-fire.html">Madpakker</a>
+            <ul class="sub-menus">
+              <li><a href="fire-nul-fire.html">Den Klassiske</a></li>
+              <li><a href="fire-nul-fire.html">Den Hurtige</a></li>
+              <li><a href="fire-nul-fire.html">Den vegetariske</a></li>
+              <li><a href="fire-nul-fire.html">Den Sunde</a></li>
+              <li><a href="fire-nul-fire.html">Den Søde</a></li>
+            </ul>
+          </li>
+          <li><a href="fire-nul-fire.html">Ingredienser</a></li>
+          <li><a href="fire-nul-fire.html">Om os</a></li>
+        </ul>
+      </nav>
+    </header>
+
+     <section>
+        <div><h1>Den klassiske</h1></div>
+        <div><h2>Fra 749 kr.</h2></div>
+        
+        <!-- Antal personer -->
+        <div><h3>Antal personer</h3></div>
+        <aside><button onclick="increaseQuantity('personer', 1);">1 person</button></aside>
+        <aside><button onclick="increaseQuantity('personer', 2);">2 personer</button></aside>
+        <aside><button onclick="increaseQuantity('personer', 3);">3 personer</button></aside>
+        <aside><button onclick="increaseQuantity('personer', 4);">4 personer</button></aside>
+        
+        <!-- Antal dage -->
+        <div><h3>Antal dage</h3></div>
+        <aside><button onclick="increaseQuantity('dage', 1);">1 dag</button></aside>
+        <aside><button onclick="increaseQuantity('dage', 2);">2 dage</button></aside>
+        <aside><button onclick="increaseQuantity('dage', 3);">3 dage</button></aside>
+        <aside><button onclick="increaseQuantity('dage', 4);">4 dage</button></aside>
+      
+        <!-- I alt -->
+        <aside>
+          <label for="iAlt">I alt:</label>
+          <input type="number" name="iAlt" id="iAlt" value="0" disabled>
+        </aside>
+
+        <!-- Reset -->
+        <aside>
+            <button onclick="resetSelections()">Reset</button>
+        </aside>
+      </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <section class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Kontakt</h4>
+              <ul>
+                <li><a href="#">addrese</a></li>
+                <li><a href="mailto:nippon@example.com">nippon@example.com</a></li>
+                <li><a href="tel:+14155550132">tel:+14155550132</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Om os</h4>
+              <ul>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Handelsbetingelser</a></li>
+                <li><a href="#">Privatlivspolitik</a></li>
+                <li><a href="#">leverandører</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Hjælpecenter</h4>
+              <ul>
+                <li><a href="#">levering</a></li>
+                <li><a href="#">refund</a></li>
+                <li><a href="#">abonnement</a></li>
+                <li><a href="#">Gavekort</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nyhedsbrev</h4>
+              <p>
+                Tilmeld dig vores nyhedsbrev og få ugentlige opskrifter, tips til nemme hverdagsretter og eksklusive
+                tilbud.
+              </p>
+              <span>Email</span>
+              <label for="email"><input type="email" id="email" pattern=".+@example\.com" size="30" required /></label>
+  
+              <button class="Tilmeld">Tilmeld</button>
+              <!-- socials -->
+              <div class="social-links"></div>
+              <h4>Find Os</h4>
+  
+              <a href=""><img class="logo_img" src="img/face-1.webp" /></a>
+              <a href=""><img class="logo_img" src="img/ig-1.webp" /></a>
+              <a href=""><img class="logo_img" src="img/x.webp" /></a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </body>
+  </html>
