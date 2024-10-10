@@ -114,7 +114,7 @@ img {
 /* forside  */
 /* hero section */
 .hero__container {
-  background-image: url("https://plus.unsplash.com/premium_photo-1661410881226-c42c7f6c6690?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url(../img/fuji-mountain-kawaguchiko-lake-sunset-autumn-seasons-fuji-mountain-yamanachi-japan.webp);
   background-size: cover;
   background-position: center;
   height: 95vh;
@@ -134,6 +134,7 @@ img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s;
 }
 .hero__btn:hover {
