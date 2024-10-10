@@ -48,46 +48,43 @@
     <main>
       <section class="indkøbsside__container">
         <div class="indkøbsside__box">
-        <h2>Den klassiske</h2>
-        <h4>Fra <span id="price">120</span> kr.</h4>
-        <p>Antal uger</p>
-        <div class="uger">
-          <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 1);">1</button></aside>
-          <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 2);">2</button></aside>
-          <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 3);">3</button></aside>
-          <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 4);">4</button></aside>
+          <h2>Den klassiske</h2>
+          <h4>Fra <span id="price">120</span> kr.</h4>
+          <p>Antal uger</p>
+          <div class="uger">
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 1);">1</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 2);">2</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 3);">3</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 4);">4</button></aside>
+          </div>
+          <p>Antal personer</p>
+          <div class="personer">
+            <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 1);">1</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 2);">2</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 3);">3</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 4);">4</button></aside>
+          </div>
+
+          <div class="ialt_reset">
+            <!-- I alt -->
+            <aside>
+              <label for="iAlt">I alt:</label>
+              <input type="number" name="iAlt" id="iAlt" value="0" disabled />
+            </aside>
+
+            <!-- Reset -->
+            <aside>
+              <button class="reset" onclick="resetSelections()">Nulstil</button>
+            </aside>
+          </div>
+
+          <button class="button" onclick="showAlert()">Bestil</button>
         </div>
-        <p>Antal personer</p>
-        <div class="personer">
-          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 1);">1</button></aside>
-          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 2);">2</button></aside>
-          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 3);">3</button></aside>
-          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 4);">4</button></aside>
-        </div>
-
-        <div class="ialt_reset">
-          <!-- I alt -->
-          <aside>
-            <label for="iAlt">I alt:</label>
-            <input type="number" name="iAlt" id="iAlt" value="0" disabled />
-          </aside>
-
-          <!-- Reset -->
-          <aside>
-            <button class="reset" onclick="resetSelections()">Nulstil</button>
-          </aside>
-        </div>
-
-        <button class="button" onclick="showAlert()">Bestil</button>
-
-      </div>
-
       </section>
 
-        <!-- ikoner på indkøbsside -->
-        <img class="kat__img" src="img/cat.webp" alt="kat" />
-        <img class="onigiri__img" src="img/Onigiri.webp" alt="onigiri" />
-    
+      <!-- ikoner på indkøbsside -->
+      <img class="kat__img" src="img/cat.webp" alt="kat" />
+      <img class="onigiri__img" src="img/Onigiri.webp" alt="onigiri" />
     </main>
 
     <!-- footer -->
@@ -141,5 +138,30 @@
         </div>
       </section>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
