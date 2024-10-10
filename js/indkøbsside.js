@@ -1,3 +1,4 @@
+"use strict"; 
 // Priser per person per dag
 const prices = {
     1: 749,
@@ -10,7 +11,7 @@ const prices = {
 let selectedPersons = 0;
 let selectedDays = 0;
 
-// Funktion til at opdatere den total pris(i alt)
+// Opdaterer den total pris(i alt)
 function updateTotal() {
     if (selectedPersons > 0 && selectedDays > 0) {
       const total = prices[selectedPersons] * selectedDays;
@@ -20,25 +21,25 @@ function updateTotal() {
     }
   }
 
-// Funktion til at håndtere valg af personer og dage
+// Håndterer valg af personer og dage
 function increaseQuantity(type, value) {
     if (type === 'personer') {
         selectedPersons = value;
-    } else if (type === 'dage') {
+    } else if (type === 'uger') {
         selectedDays = value;
     }
     updateTotal();
 }
 
-// Funktion til at nulstille valgene og den samlede pris
+// Nulstiller valgene og den samlede pris
 function resetSelections() {
 
     selectedPersons = 0;
     selectedDays = 0;
-    
 
     updateTotal();
 }
 
 // Opdatering af prisen ved indlæsning af siden
 window.onload = updateTotal;
+

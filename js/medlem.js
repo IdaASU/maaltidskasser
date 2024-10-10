@@ -1,6 +1,9 @@
+"use strict"; 
+
+// pop up når man er tilmeldt
 function showAlert() {
         document.getElementById("notifikation").style.display = "block"; // Vis popup
-        return false; // Forhindrer formularen i at blive indsendt
+        return false;
     }
 
     function closePopup() {

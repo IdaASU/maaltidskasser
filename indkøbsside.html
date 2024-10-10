@@ -53,10 +53,10 @@
           <h4>Fra <span id="price">120</span> kr.</h4>
           <p>Antal uger</p>
           <div class="uger">
-            <aside><button class="Antal_btn" onclick="increaseQuantity('dage', 1);">1</button></aside>
-            <aside><button class="Antal_btn" onclick="increaseQuantity('dage', 2);">2</button></aside>
-            <aside><button class="Antal_btn" onclick="increaseQuantity('dage', 3);">3</button></aside>
-            <aside><button class="Antal_btn" onclick="increaseQuantity('dage', 4);">4</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 1);">1</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 2);">2</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 3);">3</button></aside>
+            <aside><button class="Antal_btn" onclick="increaseQuantity('uger', 4);">4</button></aside>
           </div>
           <p>Antal personer</p>
           <div class="personer">
@@ -79,7 +79,8 @@
         </aside>
       </div>
 
-          <button class="button">Bestil</button>
+      <button class="button" onclick="showAlert()">Bestil</button>
+
           <!-- ikoner på indkøbsside -->
         <img class="kat__img" src="img/cat.webp" alt="kat">
         <img class="onigiri__img" src="img/Onigiri.webp" alt="onigiri">
@@ -88,6 +89,8 @@
       </div>
 
     </section>
+
+
   </main>
 
     <!-- footer -->

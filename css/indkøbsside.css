@@ -190,8 +190,17 @@ margin-right: 10px;
   font-size: 16px;
 }
 
-button:hover {
+.Antal_btn:hover,
+.Antal_btn:focus,
+.Antal_btn:active
+{
   background-color: #059655;
+}
+
+/* Stil til valgte knapper */
+.selected {
+  background-color: #059655;
+  color: white; /* Gør tekstfarven hvid, når knappen er valgt */
 }
 
 /* IMAGE IKONER */
