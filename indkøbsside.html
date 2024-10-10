@@ -85,6 +85,58 @@
       <!-- ikoner på indkøbsside -->
       <img class="kat__img" src="img/cat.webp" alt="kat" />
       <img class="onigiri__img" src="img/Onigiri.webp" alt="onigiri" />
+        <p>Antal personer</p>
+        <div class="personer">
+          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 1);">1</button></aside>
+          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 2);">2</button></aside>
+          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 3);">3</button></aside>
+          <aside><button class="Antal_btn" onclick="increaseQuantity('personer', 4);">4</button></aside>
+        </div>
+
+        <div class="ialt_reset">
+          <!-- I alt -->
+          <aside>
+            <label for="iAlt">I alt:</label>
+            <input type="number" name="iAlt" id="iAlt" value="0" disabled />
+          </aside>
+
+          <!-- Reset -->
+          <aside>
+            <button class="reset" onclick="resetSelections()">Nulstil</button>
+          </aside>
+        </div>
+
+        
+        <form onsubmit="return showAlert()">
+            <input class="button" type="submit" value="Bestil" />
+        </form>
+
+        <div id="notifikation" class="popup" style="display: none">
+          <p class="tekst">Din vare er nu lagt i kurven.</p>
+          <p class="tekst">Fortsæt til tilmeldning for at færdiggøre dit køb.</p>
+          <div class="close_div">
+            <a class="tilmeld" href="bliv-medlem.html">Tilmeld</a>
+            <button class="tilmeld" onclick="closePopup()">Ok</button>
+          </div>
+        </div>
+  
+      </section>
+
+  
+    
+
+      <div id="notifikation" class="popup" style="display: none">
+        Du er blevet oprettet!
+        <div class="close_div">
+          <button class="close" onclick="closePopup()">Ok</button>
+        </div>
+      </div>
+  
+
+        <!-- ikoner på indkøbsside -->
+        <img class="kat__img" src="img/cat.webp" alt="kat" />
+        <img class="onigiri__img" src="img/Onigiri.webp" alt="onigiri" />
+    
     </main>
 
     <!-- footer -->
@@ -163,5 +215,7 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
+
+    
   </body>
 </html>
